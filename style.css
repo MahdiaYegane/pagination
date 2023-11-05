@@ -1,0 +1,82 @@
+h2{
+background-color: #e2ba06;
+color: rgb(134, 34, 3);
+padding: 1rem;
+text-align: center;
+margin-top: 1rem;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+    * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ffffff;
+    font-family: sans-serif;
+}
+
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .list {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .list .item {
+    height:40rem;
+    width: 40rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* filter: drop-shadow(2px 2px 5px rgb(30, 30, 30)); */
+}
+
+main .list .item:last-of-type {
+	border-bottom: none;
+}
+main .list .item:hover {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.pagenumbers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    margin-top: 2rem;
+}
+
+.pagenumbers button {
+
+	width: 50px;
+	height: 50px;
+	appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: #6f2000;
+    border-radius: 0.5rem;
+	margin: 5px;
+	transition: 0.4s;
+	color: #FFF;
+	font-size: 18px;
+    filter: drop-shadow(2px 2px 2px gray);
+}
+
+.pagenumbers button:hover {
+	background-color: #000000;
+}
+
+.pagenumbers button.active {
+	background-color: #000000;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
